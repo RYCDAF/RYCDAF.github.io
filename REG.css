@@ -1,0 +1,129 @@
+
+        /* Estilos para la barra de navegación */
+        .menu {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-right: 20px;
+        }
+
+        .menu ul li:last-child {
+            margin-right: 0;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Estilos para el formulario de inicio de sesión */
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box .icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+
+        .input-box input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            padding-left: 40px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .input-box input:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 45px;
+            transform: translateY(-50%);
+            color: #777;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: 5px;
+            font-size: 12px;
+            color: #007BFF;
+        }
+
+        .btnInicioS {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-register {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-register a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-register a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Consulta de Activos Fijos</title>
+    <link rel="stylesheet" type="text/css" href="estilo_cons.css">
+    <script src="script.js"></script>
+  
+</head>
+<body>
+    <header>
+    <button onclick="window.location.href='index.html'" class="back-button">Retroceder</button>
+        <h1>Consulta de Activos Fijos</h1>
+        
+    </header>
+    <div class="container1">
+        <div class="search">
+            <label for="buscar">Buscar activo fijo:</label>
+            <input type="text" id="buscar" placeholder="Ingrese número de activo" onkeyup="buscarActivosFijos()">
+        </div>
+    </div>
+    <div class="container2">
+        <div id="activosFijosContainer"></div>
+    </div>
+    <script>
+        // Cargar los activos fijos al cargar la página
+        window.onload = function() {
+            buscarActivosFijos();
+        };
+    </script>
+</body>
+</html>
